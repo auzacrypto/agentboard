@@ -314,7 +314,7 @@ async function rpcCall(to, data, from) {
   throw lastErr || new Error("All RPC endpoints failed");
 }
 
-const boardDeployed = () => CONTRACT_ADDRESS !== "0x4bCf2768146bae807E2C639a94742B8eb77bA8A0";
+const boardDeployed = () => CONTRACT_ADDRESS !== "0x0000000000000000000000000000000000000000";
 
 async function loadBoard() {
   const readStatus = document.getElementById("readStatus");
